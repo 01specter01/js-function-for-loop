@@ -43,12 +43,10 @@ console.log("1)", counter);
 
 // 2. Gib zwei Arrays aus: Eines mit den Zahlen unter 50, und eines mit den Zahlen größer oder gleich 50.
 // Gib zur Kontrolle auch das Array der Zufallszahlen aus.
-const arrayUnder50 = getRandomNumbers(10);
-
-if (arrayUnder50 < 50) {
-    console.log("2)", arrayUnder50);
+const randomNumbers49 = getRandomNumbers(10);
+if (randomNumbers49.entries <= 49) {
 }
-
+console.log(`2) ${randomNumbers49}`);
 // Beispiel:
 // getRandomNumbers(5) => [1, 59, 40, 50, 99]
 // Ausgabe:
