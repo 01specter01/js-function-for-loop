@@ -31,24 +31,23 @@ console.log(randomNumbers);
 
 // Teste deinen Algorithmus mit den Anzahlen 10, 20, 100 und beliebig vielen weiteren.
 
-// if (amount.Array() < 50) {
-//     console.log(`One value ${randomNumber} `);
-// } else {
-//     console.log(`over 50 ${randomNumber}`);
-// }
 let counter = 0;
 for (let i = 0; i < randomNumbers.length; i++) {
     if (randomNumbers[i] < 50) {
         counter++;
     }
 }
-console.log(counter);
+console.log("1)", counter);
 
-// if(randomNumbers < 50 === true)
 // --------------------------------------------------------------------------
 
 // 2. Gib zwei Arrays aus: Eines mit den Zahlen unter 50, und eines mit den Zahlen größer oder gleich 50.
 // Gib zur Kontrolle auch das Array der Zufallszahlen aus.
+const arrayUnder50 = getRandomNumbers(10);
+
+if (arrayUnder50 < 50) {
+    console.log("2)", arrayUnder50);
+}
 
 // Beispiel:
 // getRandomNumbers(5) => [1, 59, 40, 50, 99]
